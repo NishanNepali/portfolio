@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .about-snav{
+            width: fit-content;
+        }
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        .member {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .member:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .member img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .member-info {
+            flex: 1;
+        }
+        h4 {
+            font-size: 18px;
+            margin: 0;
+        }
+        p {
+            font-size: 20px;
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        @media screen and (max-width: 768px) {
+            .member {
+                flex-direction: column;
+                align-items: center;
+            }
+            .member img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .member-info {
+                text-align: center;
+            }
+        }
+    </style>
+    <title>About Us - SNAV</title>
+
+
+
+    <title>About Nishan Nepali Portfolio - Web Developer</title>
+
+    <meta name="description" content="Nishan Nepali is a dedicated web developer and a passionate individual involved in web development, design, and more. Explore his portfolio and projects at nishannepali.netlify.app and nishannepali.vercel.app">
+    <meta name="keywords" content="Nishan Nepali, portfolio, web developer, web development, projects, design">
+    
+    <meta property="og:title" content="Nishan Nepali - Web Developer">
+    <meta property="og:description" content="Nishan Nepali is a dedicated web developer and a passionate individual involved in web development, design, and more. Explore his portfolio and projects at nishannepali.netlify.app and nishannepali.vercel.app">
+    <meta property="og:image" content="https://nishannepali.vercel.app/imgs/member-2.png">
+    <meta property="og:url" content="https://nishannepali.vercel.app">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nishan Nepali - Web Developer">
+    <meta name="twitter:description" content="Nishan Nepali is a dedicated web developer and a passionate individual involved in web development, design, and more. Explore his portfolio and projects at nishannepali.netlify.app and nishannepali.vercel.app">
+    <meta name="twitter:image" content="https://nishannepali.vercel.app/imgs/member-2.png">
+    
+    <link rel="canonical" href="https://nishannepali.vercel.app">
+    
+    <meta name="robots" content="index, follow">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Nishan Nepali",
+      "description": "A dedicated web developer and a passionate individual involved in web development, design, and more.",
+      "url": "https://nishannepali.vercel.app",
+      "logo": "https://nishannepali.vercel.app/imgs/member-2.png"
+    }
+    </script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+<link rel="manifest" href="imgs/site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="snav-top-logo-link" href="">
+                <img  class="snav-top-logo" src="imgs/nav-top-logo.png" alt="snav-top-logo">
+              </a>
+
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="project.html" class="nav-link">Work</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+                <a class="snav-top-logo-link" href="">
+                    <img  class="snav-top-logo" src="imgs/nav-top-logo.png" alt="snav-top-logo">
+                  </a>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="about-section">
+        <div class="profile">
+            <img src="imgs/member-2.png" alt="Your Name">
+            <h2>Nishan Nepali</h2>
+           
+        </div>
+        <div class="details">
+            <h2>About Me</h2>
+            <p>Hello, I'm Nishan Nepali, an 18-year-old guy. I've recently graduated from high school and I'm enthusiastic about pursuing another degree in Computer Science. I've embraced the world of programming, delving into full-stack development and mastering languages like C and C++. I've dedicated my free time over the past two years to learning these languages, fully immersing myself in the programming community. I also have past work experience at Snav, a tech company, which has provided me with invaluable insight into the industry.</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div title="70%" class="skill">
+                    <p>Frontend</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Backend</p>
+                    <div  title="80%"class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>C</p>
+                    <div title="50%" class="skill-bar">
+                        <div class="skill-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div title="40%" class="skill">
+                    <p>C++</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%;"></div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="line"></div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            © 2023 Nishan
+        </div>
+        <div class="footer-right">
+
+           
+<!--github-->
+                    <a href="https://github.com/NishanNepali">
+                    <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                        <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+                    </svg>
+                    </a>
+
+<!--Codepens-->
+                    <a href="https://codepen.io/Neeshannepali">
+                        <?xml version="1.0" encoding="utf-8"?>
+
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg"
+                        aria-label="CodePen" role="img"
+                        viewBox="0 0 512 512">
+                        
+                        <rect
+                        width="512" height="512"
+                        rx="15%"
+                        fill="#111"/>
+                        
+                        <g
+                        fill="none"
+                        stroke="#e6e6e6"
+                        stroke-width="33"
+                        stroke-linejoin="round">
+                        
+                        <path d="M81 198v116l175 117 175-117V198L256 81z"/>
+                        
+                        <path d="M81 198l175 116 175-116M256 81v117"/>
+                        
+                        <path d="M81 314l175-116 175 116M256 431V314"/>
+                        
+                        </g>
+                        
+                        </svg>
+                        </a>
+
+
+
+                        <!--gmail-->
+
+                        <a href="mailto:nishannepali91@gmail.com">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Gmail" role="img"
+                            viewBox="0 0 512 512"><rect
+                            width="512" height="512"
+                            rx="15%"
+                            fill="#ffffff"/><path fill="#f2f2f2" d="M120 392V151.075h272V392"/><path fill-opacity=".05" d="M256 285L120 392l-4-212"/><path fill="#d54c3f" d="M120 392H97c-12 0-22-10-22-23V143h45z"/><path fill-opacity=".08" d="M317 392h77V159H82"/><path fill="#f2f2f2" d="M97 121h318L256 234"/><path fill="#b63524" d="M392 392h23c12 0 22-10 22-23V143h-45z"/><path fill="none" stroke="#de5145" stroke-linecap="round" stroke-width="44" d="M97 143l159 115 159-115"/></svg>
+
+                        </a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    background-color: #333;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 50px 0;
+}
+</style>
