@@ -1,11 +1,3 @@
-  // Wait for the DOM to fully load
-  window.addEventListener('DOMContentLoaded', function() {
-    // Find the logo link element by its class name
-    const logoLink = document.querySelector('.snav-top-logo-link');
-    
-    // Set the href attribute to the current page URL
-    logoLink.href = window.location.href;
-});
 
 
 
