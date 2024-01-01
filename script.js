@@ -21,40 +21,5 @@
 });
 
 
-const targetText = 'NISHAN';
-const typingTarget = document.getElementById('typing-target');
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-function animateShuffle(text) {
-    const shuffledText = [...text];
-    shuffleArray(shuffledText);
-
-    let currentIndex = 0;
-
-    function displayNextLetter() {
-        if (currentIndex < targetText.length) {
-            typingTarget.textContent = shuffledText.slice(0, currentIndex + 1).join('');
-            currentIndex++;
-
-            setTimeout(displayNextLetter, 100); // Adjust the delay as needed
-        } else {
-            if (shuffledText.join('') !== targetText) {
-                animateShuffle(text);
-            } else {
-                typingTarget.textContent = targetText;
-            }
-        }
-    }
-
-    displayNextLetter();
-}
-
-animateShuffle(targetText);
 
 

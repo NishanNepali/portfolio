@@ -1,81 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life Events Article</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom right, #2e3192, #1b1464); /* Gradient background */
-     
-    }
+    <meta charset="UTF-8">
+    <title>Nishan Nepali Portfolio - Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    main {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 30px;
-      background-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-    }
+   
 
-    h1 {
-      color: #2e3192; /* Header color */
+    <meta name="description" content="Nishan Nepali is a dedicated web developer and a passionate individual involved in web development, design, and more. Explore his portfolio and projects at nishannepali.netlify.app and nishannepali.vercel.app" />
+    <meta name="keywords" content="Nishan Nepali, portfolio, web developer, web development, projects, design" />
+    <link rel="alternate" hreflang="en-US" href="https://nishannepali.vercel.app" />
+    <link rel="alternate" hreflang="es-ES" href="https://nishannepali.vercel.app" />
+    <meta property="og:title" content="Nishan Nepali - Web Developer">
+    <meta property="og:description" content="Nishan Nepali is a dedicated web developer and a passionate individual involved in web development, design, and more. Explore his portfolio and projects at nishannepali.netlify.app and nishannepali.vercel.app">
+    <meta property="og:image" content="https://nishannepali.vercel.app/imgs/member.svg">
+    <meta property="og:url" content="https://nishannepali.vercel.app">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nishan Nepali - Web Developer">
+    <meta name="twitter:description" content="Nishan Nepali is a dedicated web developer and a passionate individual involved in web development, design, and more. Explore his portfolio and projects at nishannepali.netlify.app and nishannepali.vercel.app">
+    <meta name="twitter:image" content="https://nishannepali.vercel.app/imgs/member.svg">
+    
+    <link rel="canonical" href="https://nishannepali.vercel.app">
+    
+    <meta name="robots" content="index, follow">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Nishan Nepali",
+      "description": "A dedicated web developer and a passionate individual involved in web development, design, and more.",
+      "url": "https://nishannepali.vercel.app",
+      "logo": "https://nishannepali.vercel.app/imgs/member.svg"
     }
+    </script>
+    
 
-    p {
-      margin-bottom: 20px;
-      font-size: 18px;
-      line-height: 1.6;
-    }
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+<link rel="manifest" href="imgs/site.webmanifest">
 
-    img {
-      max-width:80%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .highlight {
-      background-color: #ffd700;
-      padding: 10px;
-      border-radius: 5px;
-      color: #333;
-      font-weight: bold;
-    }
-
-    /* Mobile responsiveness */
-    @media only screen and (max-width: 600px) {
-      main {
-        padding: 20px;
-      }
-    }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
+    <style>
 
-  <main>
-    <!-- Photo at the top -->
-    <img src="imgs/pic.png" alt="Life Events Photo" style="max-width: 100%; width: 100%;">
+        .date-list {
+            width: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #313131;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .date {
+            width: calc(350px - 20px);
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            background-color: #f2f2f2;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        
+        .date a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .date:hover {
+            background-color: #ff8800;
+        }
+        
+        @media (max-width: 768px) {
+            .date {
+                width: calc(50% - 20px);
+            }
 
-    <article>
-      <h1>Embracing Change</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula ante ut nisl tincidunt, vitae ullamcorper nisi efficitur.</p>
+        
+    .thumbnail-life {
+        width: 200px !important;
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-      <p class="highlight">A significant turning point in my life was...</p>
+            
+            
+        }
+        
+      
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod felis vel orci convallis, id varius odio congue. Integer condimentum erat eget justo ultrices, vitae volutpat justo fermentum.</p>
 
-      <p>...</p>
-    </article>
+        @media (max-width: 450px) {
+            .date {
+                width: calc(100% - 20px);
+            }
+    .thumbnail-life {
+        width: 200px !important;
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
 
-    <!-- Photo at the bottom -->
-    <img src="imgs/pic.png" alt="Another Life Events Photo" style="max-width: 100%; width: 100%;">
+        
+        .thumbnail-life {
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        </style>
+        
+        <header>
+            <nav>
+                <a class="snav-top-logo-link" href="index.html">
+              <img  class="snav-top-logo" src="imgs/nav-top-logo.png" alt="snav-top-logo">
+            </a>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="life.html" class="nav-link">Life</a></li>
+                    <li><a href="photo.html" class="nav-link">Photo</a></li>
+                    <li><a href="project.html" class="nav-link">Work</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="menu-wrap">
+            <input  lable="toggle" type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                    <a class="snav-top-logo-link" href="">
+                    <img  class="snav-top-logo" loading="lazy" src="imgs/nav-top-logo.png" alt="nishan-nepali-portfolio-top-logo">
+                </a>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="life.html">Life</a></li>
+                    <li><a href="photo.html">Photo</a></li>
+                    <li><a href="project.html">Work</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    
 
-  </main>
+
+
+
+
+    <div class="date-list">
+        <div class="date"><a href="life/">Nishan Day in life  <img class="thumbnail-life" src="Nishan Image/20201207170325_IMG_7306.JPG" alt="Thumbnail"></a></div>
+        <div class="date"><a href="life/">Nishan Day in life  <img class="thumbnail-life" src="Nishan Image/20201207170325_IMG_7306.JPG" alt="Thumbnail"></a></div>
+        <div class="date"><a href="life/">Nishan Day in life  <img class="thumbnail-life" src="Nishan Image/20201207170325_IMG_7306.JPG" alt="Thumbnail"></a></div>
+        <div class="date"><a href="life/">Nishan Day in life  <img class="thumbnail-life" src="Nishan Image/20201207170325_IMG_7306.JPG" alt="Thumbnail"></a></div>
+        <div class="date"><a href="life/">Nishan Day in life  <img class="thumbnail-life" src="Nishan Image/20201207170325_IMG_7306.JPG" alt="Thumbnail"></a></div>
+        <div class="date"><a href="life/">Nishan Day in life  <img class="thumbnail-life" src="Nishan Image/20201207170325_IMG_7306.JPG" alt="Thumbnail"></a></div>
+        <div class="date"><a href="life/">Nishan Day in life  <img class="thumbnail-life" src="Nishan Image/20201207170325_IMG_7306.JPG" alt="Thumbnail"></a></div>
+
+        <div class="date"><a href="life/"></a></div>
+        <div class="date"><a href="life/"></a></div>
+        <div class="date"><a href="life/"></a></div>
+        <div class="date"><a href="life/"></a></div>
+        <div class="date"><a href="life/"></a></div>
+
+        <!---
+        <div class="date"><a href="life/">kartik 9, 2023</a></div>
+        <div class="date"><a href="life/">kartik 10, 2023</a></div>
+        <div class="date"><a href="life/">kartik 11, 2023</a></div>
+        <div class="date"><a href="life/">kartik 13, 2023</a></div>
+        <div class="date"><a href="life/">kartik 12, 2023</a></div>
+        <div class="date"><a href="life/">kartik 15, 2023</a></div>
+        <div class="date"><a href="life/">kartik 14, 2023</a></div>
+        <div class="date"><a href="life/">kartik 17, 2023</a></div>
+        <div class="date"><a href="life/">kartik 16, 2023</a></div>
+        <div class="date"><a href="life/">kartik 19, 2023</a></div>
+        <div class="date"><a href="life/">kartik 18, 2023</a></div>
+        <div class="date"><a href="life/">kartik 21, 2023</a></div>
+        <div class="date"><a href="life/">kartik 20, 2023</a></div>
+        <div class="date"><a href="life/">kartik 23, 2023</a></div>
+        <div class="date"><a href="life/">kartik 22, 2023</a></div>
+        <div class="date"><a href="life/">kartik 30, 2023</a></div>
+        <div class="date"><a href="life/">kartik 24, 2023</a></div>
+
+        -->
+      
+     
+        <!-- Add more dates and links as needed -->
+    </div>
+
+    
+
+
+
+    <footer class="footer">
+        <div class="footer-left">
+        <h5>  © 2023 Nishan Nepali </h5>  
+        </div>
+        <div class="footer-right">
+
+           
+<!--github-->
+                    <a href="https://github.com/NishanNepali">
+                    <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                        <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+                    </svg>
+                    </a>
+
+<!--Codepens-->
+                    <a href="https://codepen.io/Neeshannepali">
+                        <?xml version="1.0" encoding="utf-8"?>
+
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg"
+                        aria-label="CodePen" role="img"
+                        viewBox="0 0 512 512">
+                        
+                        <rect
+                        width="512" height="512"
+                        rx="15%"
+                        fill="#111"/>
+                        
+                        <g
+                        fill="none"
+                        stroke="#e6e6e6"
+                        stroke-width="33"
+                        stroke-linejoin="round">
+                        
+                        <path d="M81 198v116l175 117 175-117V198L256 81z"/>
+                        
+                        <path d="M81 198l175 116 175-116M256 81v117"/>
+                        
+                        <path d="M81 314l175-116 175 116M256 431V314"/>
+                        
+                        </g>
+                        
+                        </svg>
+                        </a>
+
+
+
+                        <!--gmail-->
+
+                        <a href="mailto:nishannepali91@gmail.com">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Gmail" role="img"
+                            viewBox="0 0 512 512"><rect
+                            width="512" height="512"
+                            rx="15%"
+                            fill="#ffffff"/><path fill="#f2f2f2" d="M120 392V151.075h272V392"/><path fill-opacity=".05" d="M256 285L120 392l-4-212"/><path fill="#d54c3f" d="M120 392H97c-12 0-22-10-22-23V143h45z"/><path fill-opacity=".08" d="M317 392h77V159H82"/><path fill="#f2f2f2" d="M97 121h318L256 234"/><path fill="#b63524" d="M392 392h23c12 0 22-10 22-23V143h-45z"/><path fill="none" stroke="#de5145" stroke-linecap="round" stroke-width="44" d="M97 143l159 115 159-115"/></svg>
+
+                        </a>
+        </div>
+
+    </footer>
+
 
 </body>
+
 </html>
+
+
+
+<script>
+    // Wait for the DOM to fully load
+    window.addEventListener('DOMContentLoaded', function() {
+   // Find all navigation links
+   const navLinks = document.querySelectorAll('.nav-link');
+   
+   // Get the current page URL
+   const currentPageURL = window.location.href;
+   
+   // Loop through each navigation link
+   navLinks.forEach(link => {
+       // Compare the link's href with the current page URL
+       if (link.href === currentPageURL) {
+           // Add a class to the active link
+           link.classList.add('active');
+       }
+   });
+});
+
+
+</script>

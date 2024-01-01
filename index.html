@@ -54,11 +54,9 @@
         </a>
             <ul>
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="life.html" class="nav-link">Life</a></li>
                 <li><a href="photo.html" class="nav-link">Photo</a></li>
                 <li><a href="project.html" class="nav-link">Work</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -74,11 +72,9 @@
             </a>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="life.html">Life</a></li>
                 <li><a href="photo.html">Photo</a></li>
                 <li><a href="project.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -87,16 +83,80 @@
 
    
     
-    <div class="logo">
-        <img src="imgs/member.svg" alt="Nishan Nepali picture">
+      <div class="about-section">
+        <div class="profile">
+            <img src="imgs/member.svg" alt="Nishan Nepali Image">
+            <h2>Nishan Nepali</h2>
+           
+        </div>
+        <div class="details">
+            <p>Hello, I'm Nishan Nepali, an 18-year-old guy. I've recently graduated from high school and I'm enthusiastic about pursuing another degree in Computer Science. I've embraced the world of programming, delving into full-stack development and mastering languages like C and C++. I've dedicated my free time over the past two years to learning these languages, fully immersing myself in the programming community. I also have past work experience at Snav, a tech company, which has provided me with invaluable insight into the industry.</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div title="70%" class="skill">
+                    <p>Frontend</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Backend</p>
+                    <div  title="80%"class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>C</p>
+                    <div title="50%" class="skill-bar">
+                        <div class="skill-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div title="40%" class="skill">
+                    <p>C++</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%;"></div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
     </div>
-  
-    <div class="typing-animation">
-        <h1 id="typing-target"></h1>
-    </div>
-
-   
     
+    <div class="line"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="content-contact">
+    <h2>Contact Nishan</h2>
+    
+    <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>I  am easily available for website development and other projects. Feel free to reach out to me:</p>
+        <p>Find me on <a href="https://www.linkedin.com/in/nishan-nepali-671109290/">LinkedIn</a> for updates and collaborations.</p>
+        <p>Contact me via email at <a href="mailto:nishannepali91@gmail.com">nishannepali91@gmail.com</a>.</p>
+    </div>
+</div>
+
+
     <footer class="footer">
         <div class="footer-left">
         <h5>  © 2023 Nishan Nepali </h5>  
@@ -160,6 +220,125 @@
 
     </footer>
 
-    <script src="script.js"></script>
+  
 </body>
 </html>
+
+
+
+<style>
+  .about-section {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 50px 0;
+}
+
+.profile {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.profile img {
+border-radius: 50%;
+width: 150px;
+height: 150px;
+object-fit: cover;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+max-width: 600px;
+margin-left: 20px;
+}
+
+.skills {
+margin-top: 20px;
+}
+
+.skill {
+margin-bottom: 10px;
+}
+
+.skill-bar {
+background-color: #ddd;
+height: 20px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.skill-progress {
+background-color: #333;
+height: 100%;
+width: 0;
+transition: width 1s ease;
+}
+
+.line {
+width: 100%;
+height: 2px;
+background-color: #333;
+margin: 50px 0;
+}
+</style>
+
+
+<style>
+    .content-contact {
+            max-width: 1000px; 
+            margin: 0 auto;
+            padding: 40px;
+        }
+        h2 {
+            font-size: 32px; 
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 30px; 
+        }
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 15px; 
+        }
+        .contact-info p {
+            font-size: 18px; 
+            margin: 0 0 10px;
+            opacity: 0.8;
+        }
+        .contact-info a {
+            color: #00bfff; 
+            text-decoration: none;
+        }
+        @media(min-width:250px) and (max-width:400px){
+            .content-contact {
+            max-width: 1000px; 
+            margin: 0 auto;
+            padding: 20px;
+        }
+        }
+</style>
+
+
+<script>
+     // Wait for the DOM to fully load
+     window.addEventListener('DOMContentLoaded', function() {
+    // Find all navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Get the current page URL
+    const currentPageURL = window.location.href;
+    
+    // Loop through each navigation link
+    navLinks.forEach(link => {
+        // Compare the link's href with the current page URL
+        if (link.href === currentPageURL) {
+            // Add a class to the active link
+            link.classList.add('active');
+        }
+    });
+});
+
+
+</script>
